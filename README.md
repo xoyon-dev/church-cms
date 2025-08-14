@@ -44,8 +44,8 @@ Welcome to the official CMS project for our church! This Laravel-based web appli
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/your-username/iglesia-website.git
-cd iglesia-website
+git clone https://github.com/xoyon-dev/church-cms.git
+cd church-cms
 ```
 2. **Install PHP dependencies:**
 ```bash
@@ -65,7 +65,7 @@ php artisan key:generate
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=iglesia_website
+DB_DATABASE=church-cms
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
 ```
