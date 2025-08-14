@@ -1,5 +1,8 @@
-![Company Logo](public/images/CROW.svg)
-# Church CMS Project
+<div style="text-align: center; margin-bottom: 20px;">
+  <img src="public/images/CROW.svg" alt="CROW Logo" width="200">
+  <h1>Church CMS</h1>
+  <p><em>Built with Laravel and Filament</em></p>
+</div>
 
 ## 🙏 Welcome
 
@@ -133,7 +136,7 @@ If you encounter any issues or have questions, please:
 - Check the documentation
 
 ## 📄 License
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the MIT License.
 
 ## 🙏 Acknowledgments
 Thank God, you to all contributors and church members who support this project.
