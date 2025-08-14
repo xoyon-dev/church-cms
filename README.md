@@ -1,61 +1,141 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+![Company Logo](public/images/CROW.svg)
+# Church CMS Project
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 🙏 Welcome
 
-## About Laravel
+Welcome to the official CMS project for our church! This Laravel-based web application aims to keep our church members informed about services, events, sermons, and small groups.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📋 Project Description
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**Objective:** To inform current church members about the church itself, its events, sermons, and small groups.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**Primary Audience:** Church members.
 
-## Learning Laravel
+### Content Features
+- ✅ Full church name
+- 📍 Temple address
+- 📅 Available services and events with their schedules
+- 📖 Statement of faith or church doctrine (mission, vision, or values)
+- 🎧 Resources such as sermons and Bible studies
+- 📞 Contact information
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Functionality
+- 📝 Contact form for prayer requests, questions, or comments
+- ✋ Form to confirm participation in events
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Design
+- 🎨 Modern and minimalist design
+- 🎨 Church colors:
+    - `#d6a21e` - Yellow
+    - `#895301` - Brown
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🚀 Development Setup
 
-## Laravel Sponsors
+### Prerequisites
+- PHP >= 8.1
+- Composer
+- Node.js & npm
+- MySQL/PostgreSQL/SQLite
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Installation
 
-### Premium Partners
+1. **Clone the repository:**
+```bash
+git clone https://github.com/your-username/iglesia-website.git
+cd iglesia-website
+```
+2. **Install PHP dependencies:**
+```bash
+composer install
+```
+3. **Install Node.js dependencies:**
+```
+npm install
+```
+4. **Environment setup:**
+```
+cp .env.example .env
+php artisan key:generate
+```
+5. **Configure database: Edit .env file with your database credentials:**
+```  
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=iglesia_website
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
+6. **Run migrations:**
+```
+php artisan migrate
+```
+7. **Seed database:**
+```
+php artisan db:seed
+```
+8. **Build assets:**
+```
+npm run dev
+```
+9. **Start development server:**
+```
+composer run dev
+```
+Visit http://localhost:8000 to see the application.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 🤝 How to Contribute
+We welcome contributions from our community! 
+### Getting Started
+1. **Fork the repository**
+2. **Create a feature branch**
+```
+git checkout -b feature/nueva-funcionalidad
+```
+3. **Make your changes**
+4. **Commit your changes**
+```
+git commit -m "Add: nueva funcionalidad para eventos"
+```
+5. **Push to your fork**
+```
+git push origin feature/nueva-funcionalidad
+```
+6. **Create a Pull Request**
 
-## Contributing
+### Contribution Guidelines
+- 📝 Write clear, descriptive commit messages 
+- 🧪 Add tests for new functionality 
+- 📚 Update documentation when needed 
+- 🎨 Follow the existing code style 
+- 🔍 Ensure your code passes all tests
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Code Style
+- Use meaningful variable and function name
+- Keep functions small and focused
 
-## Code of Conduct
+### Testing
+```
+# Run PHP tests
+php artisan test
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# Run PHP tests
+npm run test
+```
+## 👥 Team
+- Miguel 
 
-## Security Vulnerabilities
+## 📞 Support
+If you encounter any issues or have questions, please:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Create an issue on GitHub
+- Contact the development team
+- Check the documentation
 
-## License
+## 📄 License
+This project is open source and available under the [MIT License](LICENSE).
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🙏 Acknowledgments
+Thank God, you to all contributors and church members who support this project.
+
+**Made with ❤️ for our Rey de reyes church community in Totonicapán**
