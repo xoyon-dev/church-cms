@@ -1,7 +1,7 @@
-<div style="text-align: center; margin-bottom: 20px;">
+<div align="center">
   <img src="public/images/CROW.svg" alt="CROW Logo" width="200">
   <h1>Church CMS</h1>
-  <p><em>Built with Laravel and Filament</em></p>
+  <p><em>Built with Laravel and filament</em></p>
 </div>
 
 ## 🙏 Welcome
